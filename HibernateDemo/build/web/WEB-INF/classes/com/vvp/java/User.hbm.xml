@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 23, 2019 8:13:05 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.vvp.java.User" table="user" catalog="dbstudent">
+        <id name="sid" type="java.lang.Integer">
+            <column name="sid" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="10" not-null="true" />
+        </property>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="sem" type="int">
+            <column name="sem" not-null="true" />
+        </property>
+        <property name="enrollment" type="int">
+            <column name="enrollment" not-null="true" />
+        </property>
+        <property name="phone" type="int">
+            <column name="phone" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
